@@ -206,14 +206,169 @@
 // Implementare un ciclo che faccia reinserire la password qualora le regole non fossero 
 // rispettate e che interrompa il programma in caso di password accettata.
 
-$password = readline("Inserisci Password: ");
-$control = false;
-while($control == false)
-    if(strlen($password) >= 8){
-        echo "La password è corretta";
-        $control = true;
-    }else{
-        $password = readline("La password deve contenere un minimo di 8 caratteri! Riprovare: ");
-    }
+// $password = readline("Inserisci Password: ");
+// $control = false;
+// while($control == false)
+//     if(strlen($password) >= 8){
+//         echo "La password è corretta";
+//         $control = true;
+//     }else{
+//         $password = readline("La password deve contenere un minimo di 8 caratteri! Riprovare: ");
+//     }
+
+
+
+// class Batman {
+//     public $parteAnteriore;
+//     public $partePosteriore;
+
+//     public function __construct(ParteAnteriore $_parteAnteriore, PartePosteriore $_partePosteriore) {
+//         $this->parteAnteriore = $_parteAnteriore;
+//         $this->partePosteriore = $_partePosteriore;
+//     }
+
+//     public function movimento() {
+//         $this->partePosteriore->muoviti();
+//     }
+
+//     public function attacco() {
+//         $this->parteAnteriore->attacca();
+//     }
+// }
+
+// // Provate ad aggiungere attributi e metodi a ParteAnteriore e PartePosteriore
+// abstract class ParteAnteriore {
+//     abstract function attacca();
+// }
+
+// abstract class PartePosteriore {
+//     abstract function muoviti();
+// }
+
+// class Lanciafiamme extends ParteAnteriore {
+//     public function attacca() {
+//         echo "Ti cuocio allo spiedo \n";
+//     }
+// }
+
+// class Lanciarazzi extends ParteAnteriore {
+//     public function attacca() {
+//         echo "Ti faccio esplodere come un botto di Capodanno \n";
+//     }
+// }
+
+// class Ruote extends PartePosteriore {
+//     public function muoviti() {
+//         echo "Scappo via sgommando \n";
+//     }
+// }
+
+// class Propulsori extends PartePosteriore {
+//     public function muoviti() {
+//         echo "Sto praticamente decollando \n";
+//     }
+// }
+
+
+// PROGETTAZIONE DESMONDMOBILE MODELLO ARMA LUCIA
+
+// class DesmondMobile {
+//     public $ParteAnteriore;
+//     public $PartePosteriore;
+
+//     public function __construct(ParteAnteriore $_ParteAnteriore, PartePosteriore $_PartePosteriore) {
+//         $this->ParteAnteriore = $_ParteAnteriore;
+//         $this->PartePosteriore = $_PartePosteriore;
+//     }
+//     public function movimento() {
+//         $this->PartePosteriore->trappole();
+//     }
+//     public function attacco() {
+//         $this->ParteAnteriore->attacca();
+//     }
+// }
+// abstract class ParteAnteriore {
+//     abstract function attacca();
+// }
+// abstract class PartePosteriore {
+//     abstract function trappole();
+// }
+// class LanciaLucie extends ParteAnteriore {
+//     public function attacca() {
+//     echo "Ti lancerò una Lucia, arma letale sottoforma di macchina che conosce tutte le arti marziali a livello mondiale usando gli accessori della desmondMobile \n";
+// }
+// }
+// class LucyProtector extends ParteAnteriore {
+//     public function attacca(){
+//     echo "LucyProtector, una Lucia sottoforma di macchina in grado di deviare missili, proiettili ed esplosioni nucleari fino a 100 chilotoni \n";
+// }
+// }
+// class TurboLucia extends PartePosteriore {
+//     public function trappole() {
+//     echo "Sono una Lucia sottoforma di macchina che aziona un turbo in grado di fare 0-100 in 0,00000000000000000001 ms/h \n";
+// }
+// }
+// class LucyTrap extends PartePosteriore {
+//     public function trappole() {
+//     echo "Sono una Lucia sottoforma di macchina che lancia le trappole tre volte moltiplicato per 300 livelli successivi alle trappole buccia di banana di super mario kart \n";
+// }
+// }
+
+// $DesmondMobile1 = new DesmondMobile(new LanciaLucie, new TurboLucia);
+// $DesmondMobile2 = new DesmondMobile(new LucyProtector, new LucyTrap);
+// $DesmondMobile2->movimento();
+
+
+
+
+// altra progettazione
+
+// class Skyline {
+//     public $Anteriore;
+//     public $Posteriore;
+//         public function __construct(Anteriore $_Anteriore, Posteriore $_Posteriore){
+//             $this->Anteriore = $_Anteriore;
+//             $this->Posteriore = $_Posteriore;
+//     }
+//         public function frenoamano() {
+//                 $this->Posteriore->drift();
+//             }
+//         public function accelerata() {
+//                 $this->Anteriore->motore();
+//             }
+// }
+//     abstract class Anteriore {
+//         abstract function motore();
+//     }
+//     abstract class Posteriore {
+//         abstract function drift();
+//     }
+//         class Accelera extends Anteriore {
+//             public function motore() {
+//             echo "Accelerazione 76/100 \n";
+//         }
+//         }
+//         class Nos extends Anteriore {
+//             public function motore(){
+//             echo "Nitro livello 2/3 \n";
+//         }
+//         }
+//         class Scarico extends Posteriore {
+//             public function drift() {
+//             echo "Scarico Diretto \n";
+//         }
+//         }
+//         class Sospensioni extends Posteriore {
+//             public function drift() {
+//             echo "Sospensioni a Gas \n";
+//         }
+//         }
+        
+//         $Skyline1 = new Skyline(new Accelera, new Scarico);
+//         $Skyline2 = new Skyline(new Nos, new Sospensioni);
+//         $Skyline1->accelerata();
+
+
+
 
 ?>
